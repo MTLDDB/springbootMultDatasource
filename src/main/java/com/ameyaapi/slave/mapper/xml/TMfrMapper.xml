@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ameyaapi.slave.mapper.TMfrMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.ameyaapi.slave.entity.TMfr">
+                    <id column="id" property="id" />
+                    <result column="imagepath" property="imagepath" />
+                    <result column="inital" property="inital" />
+                    <result column="mfrfullname" property="mfrfullname" />
+                    <result column="urlname" property="urlname" />
+                    <result column="mfrabbr" property="mfrabbr" />
+                    <result column="mfrparent" property="mfrparent" />
+                    <result column="supplierdesc" property="supplierdesc" />
+                    <result column="mfrdetail" property="mfrdetail" />
+                    <result column="mfrurl" property="mfrurl" />
+                    <result column="mpncount" property="mpncount" />
+                    <result column="isnable" property="isnable" />
+                    <result column="supplidetail" property="supplidetail" />
+                    <result column="othername" property="othername" />
+                    <result column="supplidetail_cn" property="supplidetailCn" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+        id, imagepath, inital, mfrfullname, urlname, mfrabbr, mfrparent, supplierdesc, mfrdetail, mfrurl, mpncount, isnable, supplidetail, othername, supplidetail_cn
+    </sql>
+
+</mapper>

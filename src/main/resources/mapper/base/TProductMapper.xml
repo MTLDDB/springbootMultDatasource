@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ameyaapi.base.mapper.TProductMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ameyaapi.base.entity.TProduct">
+        <id column="objectid" property="objectid" />
+        <result column="categoryid" property="categoryid" />
+        <result column="categoryname" property="categoryname" />
+        <result column="mfgid" property="mfgid" />
+        <result column="mfgname" property="mfgname" />
+        <result column="partnum" property="partnum" />
+        <result column="mpn" property="mpn" />
+        <result column="descript" property="descript" />
+        <result column="productintroduction" property="productintroduction" />
+        <result column="publicitywords" property="publicitywords" />
+        <result column="seokeyword" property="seokeyword" />
+        <result column="isshelves" property="isshelves" />
+        <result column="productstate_id" property="productstateId" />
+        <result column="obligate1" property="obligate1" />
+        <result column="obligate2" property="obligate2" />
+        <result column="obligate3" property="obligate3" />
+        <result column="obligate4" property="obligate4" />
+        <result column="domain" property="domain" />
+        <result column="spq" property="spq" />
+        <result column="descript_cn" property="descriptCn" />
+        <result column="cpn" property="cpn" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        objectid, categoryid, categoryname, mfgid, mfgname, partnum, mpn, descript, productintroduction, publicitywords, seokeyword, isshelves, productstate_id, obligate1, obligate2, obligate3, obligate4, domain, spq, descript_cn, cpn
+    </sql>
+
+</mapper>
